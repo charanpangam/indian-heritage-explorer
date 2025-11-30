@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/indian-heritage-explorer/static/js/main.a39f68c6.js",
+    "main.js": "/indian-heritage-explorer/static/js/main.3d3b8d04.js",
     "index.html": "/indian-heritage-explorer/index.html",
-    "main.a39f68c6.js.map": "/indian-heritage-explorer/static/js/main.a39f68c6.js.map"
+    "main.3d3b8d04.js.map": "/indian-heritage-explorer/static/js/main.3d3b8d04.js.map"
   },
   "entrypoints": [
-    "static/js/main.a39f68c6.js"
+    "static/js/main.3d3b8d04.js"
   ]
 }
