@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { User, Lock } from 'lucide-react';
 
 const Login = ({ onLogin }) => {
-  const [userId, setUserId] = useState('');
-  const [password, setPassword] = useState('');
+  const [userId, setUserId] = useState('1234');
+  const [password, setPassword] = useState('5678');
   const [selectedRole, setSelectedRole] = useState('');
   const [error, setError] = useState('');
 
@@ -65,8 +65,9 @@ const Login = ({ onLogin }) => {
                 onChange={(e) => setUserId(e.target.value)}
                 placeholder="Enter 4-digit ID"
                 maxLength="4"
-                style={{ width: '100%', padding: '12px 12px 12px 40px', border: '1px solid #ddd', borderRadius: '8px', fontSize: '1rem' }}
+                style={{ width: '100%', padding: '12px 12px 12px 40px', border: '1px solid #ddd', borderRadius: '8px', fontSize: '1rem', background: '#f8f9fa' }}
                 required
+                readOnly
               />
             </div>
           </div>
@@ -81,8 +82,9 @@ const Login = ({ onLogin }) => {
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Enter password"
                 maxLength="4"
-                style={{ width: '100%', padding: '12px 12px 12px 40px', border: '1px solid #ddd', borderRadius: '8px', fontSize: '1rem' }}
+                style={{ width: '100%', padding: '12px 12px 12px 40px', border: '1px solid #ddd', borderRadius: '8px', fontSize: '1rem', background: '#f8f9fa' }}
                 required
+                readOnly
               />
             </div>
           </div>
