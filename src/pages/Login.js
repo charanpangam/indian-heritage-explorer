@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { User, Lock } from 'lucide-react';
 
 const Login = ({ onLogin }) => {
-  const [userId, setUserId] = useState('1234');
-  const [password, setPassword] = useState('5678');
+  const [userId, setUserId] = useState('');
+  const [password, setPassword] = useState('');
   const [selectedRole, setSelectedRole] = useState('');
   const [error, setError] = useState('');
 
@@ -36,6 +36,11 @@ const Login = ({ onLogin }) => {
           <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🏛️</div>
           <h1 style={{ color: '#333', marginBottom: '0.5rem', fontSize: '2rem', fontWeight: 'bold' }}>Heritage Explorer</h1>
           <p style={{ color: '#666', fontSize: '1.1rem' }}>Discover India's Rich Cultural Legacy</p>
+          <div style={{ marginTop: '1rem', padding: '1rem', background: 'rgba(255,107,53,0.1)', borderRadius: '8px', border: '1px solid rgba(255,107,53,0.3)' }}>
+            <p style={{ color: '#ff6b35', fontWeight: 'bold', marginBottom: '0.5rem' }}>Login Credentials:</p>
+            <p style={{ color: '#333', fontSize: '0.9rem' }}>User ID: <strong>1234</strong></p>
+            <p style={{ color: '#333', fontSize: '0.9rem' }}>Password: <strong>5678</strong></p>
+          </div>
         </div>
 
         <form onSubmit={handleLogin}>
@@ -65,9 +70,8 @@ const Login = ({ onLogin }) => {
                 onChange={(e) => setUserId(e.target.value)}
                 placeholder="Enter 4-digit ID"
                 maxLength="4"
-                style={{ width: '100%', padding: '12px 12px 12px 40px', border: '1px solid #ddd', borderRadius: '8px', fontSize: '1rem', background: '#f8f9fa' }}
+                style={{ width: '100%', padding: '12px 12px 12px 40px', border: '1px solid #ddd', borderRadius: '8px', fontSize: '1rem' }}
                 required
-                readOnly
               />
             </div>
           </div>
@@ -82,9 +86,8 @@ const Login = ({ onLogin }) => {
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Enter password"
                 maxLength="4"
-                style={{ width: '100%', padding: '12px 12px 12px 40px', border: '1px solid #ddd', borderRadius: '8px', fontSize: '1rem', background: '#f8f9fa' }}
+                style={{ width: '100%', padding: '12px 12px 12px 40px', border: '1px solid #ddd', borderRadius: '8px', fontSize: '1rem' }}
                 required
-                readOnly
               />
             </div>
           </div>
